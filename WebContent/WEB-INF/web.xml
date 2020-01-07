@@ -3,7 +3,11 @@
   <display-name>eLoanService</display-name>
   
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+     <welcome-file>index.jsp</welcome-file>
+     <welcome-file>Grid.jsp</welcome-file>
+     <welcome-file>Grid1.jsp</welcome-file>
+     <welcome-file>test.jsp</welcome-file>
+     <welcome-file>test2.jsp</welcome-file>
   </welcome-file-list>
   
   <servlet>

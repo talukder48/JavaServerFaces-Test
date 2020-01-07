@@ -22,3 +22,5 @@ function AjaxCall(){
 	xhttp.open("POST", "XMLHTTPServlet?" + DataMap, true);
 	xhttp.send();
 }
+
+//https://www.ag-grid.com/javascript-grid/

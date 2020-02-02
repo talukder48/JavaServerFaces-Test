@@ -3,10 +3,10 @@ package orm;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LoginValidator {
+public class Login {
 	Map<String, String> ResultMap = new HashMap<String, String>();
 
-	public LoginValidator() {
+	public Login() {
 		ResultMap.clear();
 	}
 

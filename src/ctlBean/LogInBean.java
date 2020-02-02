@@ -4,6 +4,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 import eDelegator.CDelegator;
+import validator.LoginValidation;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -14,8 +15,10 @@ import java.util.Map;
 public class LogInBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	Map ReturnObj = new HashMap<String, String>();
-
+	Map ValidatorObj = new HashMap<String, String>();
+	LoginValidation lv=null;
 	public LogInBean() {
+		lv =new LoginValidation();		
 	}
 
 	private String usrname = null;
@@ -26,7 +29,18 @@ public class LogInBean implements Serializable {
 	}
 
 	public void setUsrname(String usrname) {
-		this.usrname = usrname;
+		
+		Map<String, String> datamap = new HashMap<String, String>();
+		datamap.put("USER_NAME", usrname);
+		try {
+			ValidatorObj=lv.UserIdValidation(datamap);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		if (ReturnObj.get("ERROR").toString() == null || ReturnObj.get("ERROR").toString() == "") {
+			this.usrname = usrname;
+		}		
 	}
 
 	public String getPassword() {

@@ -18,7 +18,7 @@ public class CommonFacade {
 		String method = map.get("Method").toString();
 		String className = map.get("Class").toString();
 		try {						
-			Class classDefinition = Class.forName("prmsValidators."+className);
+			Class classDefinition = Class.forName("validator."+className);
 	        Object  object = classDefinition.newInstance();	        
 		    Method m = object.getClass().getDeclaredMethod(method, Map.class);
 		    MapObj = (Map) m.invoke(object, map);			

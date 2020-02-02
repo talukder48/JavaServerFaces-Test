@@ -46,7 +46,7 @@ public class LogInBean implements Serializable {
 		DataObj.put("Method", "Save");
 
 		CDelegator cd = new CDelegator();
-		ReturnObj = cd.Facade(DataObj);
+		ReturnObj = cd.CommonDelegator(DataObj);
 
 		if (ReturnObj.get("ERROR").toString() == null || ReturnObj.get("ERROR").toString() == "") {
 			return "success";

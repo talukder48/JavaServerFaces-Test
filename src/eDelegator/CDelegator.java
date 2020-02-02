@@ -6,7 +6,7 @@ import java.util.Map;
 import orm.*;
 public class CDelegator {
 
-	public static Map<String, String>  Facade(Map map) {
+	public static Map<String, String>  CommonDelegator(Map map) {
 		Map<String, String> MapObj = new HashMap<String, String>();
 		String method = map.get("Method").toString();
 		String className = map.get("JavaClass").toString();

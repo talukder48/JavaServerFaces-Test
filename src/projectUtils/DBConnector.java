@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
+
 public class DBConnector {
 	public static Connection DBConnection = null;
 
@@ -18,7 +19,6 @@ public class DBConnector {
 		} catch (SQLException e) {
 			e.printStackTrace();
 
-			
 		} catch (Exception e) {
 			e.getLocalizedMessage();
 		}
@@ -47,7 +47,7 @@ public class DBConnector {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void Commit() {
 		try {
 			DBConnection.commit();

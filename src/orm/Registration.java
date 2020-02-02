@@ -12,9 +12,9 @@ public class Registration {
 
 	public Map<String, String> Save(Map DataMap) {
 		ResultMap.put("ERROR", "");
-		
-		//BO file 
-		
+
+		// BO file
+
 		return ResultMap;
 	}
 }

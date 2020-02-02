@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15755752690350" configfile="/eLoanService/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15755752690350" configfile="/eLoanService/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index" id="pf158066532767410" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf158066532767411 pf158066532767412" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Grid" id="pf158066532767413" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf158066532767411" path="/Grid.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="test" id="pf158066532767414" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf158066532767412" path="/test.jsp"/>
+  <links id="pf158066532767411" target="pf158066532767413" source="pf158066532767410" outcome="success"/>
+  <links id="pf158066532767412" target="pf158066532767414" source="pf158066532767410" outcome="failure"/>
+</pageflow:Pageflow>

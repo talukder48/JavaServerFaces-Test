@@ -9,9 +9,13 @@
 </head>
 <body>
 <h1 style="color:green; font-family:impact"><center>Bangladesh House Building Finance Corporation</center></h1></td>
-
+<center>
 <f:view>
 		<h1>Mail Service </h1>
+		
+		
 </f:view>
+</center>
+
 </body>
 </html>

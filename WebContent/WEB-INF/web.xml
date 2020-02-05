@@ -20,7 +20,7 @@
     <description>Ajax Handler</description>
     <display-name>XMLHTTPServlet</display-name>
     <servlet-name>XMLHTTPServlet</servlet-name>
-    <servlet-class>validator.XMLHTTPServlet</servlet-class>
+    <servlet-class>xmlhttpvalidator.XMLHTTPServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>XMLHTTPServlet</servlet-name>

@@ -10,7 +10,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Log In</title>
 
 <script type="text/javascript">
 	function init() {
@@ -66,7 +66,7 @@
 				<div id="save">
 					<table border="0" cellspacing="4" cellpadding="1">
 						<h:commandButton id="Submit" action="#{LogInBean.Update}" value="LogIn"/>
-						<h:commandButton id="Cancel"  value="Cancel"/>
+						<h:commandButton id="Cancel"  value="Forgot password? "/>
 					</table>
 				</div>
 			

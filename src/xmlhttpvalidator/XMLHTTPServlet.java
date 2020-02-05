@@ -66,7 +66,7 @@ public class XMLHTTPServlet extends HttpServlet {
 			}
 		}
 		catch (Exception e) {
-			outmap.put("ERROR_MSG", "Please fill the undefined field / Amount field shuld be Zero or  Non-Zero But Not Blank");
+			outmap.put("ERROR", "Please fill the undefined field / Amount field shuld be Zero or  Non-Zero But Not Blank");
 		}
 		
 		Gson gsonObj = new Gson();

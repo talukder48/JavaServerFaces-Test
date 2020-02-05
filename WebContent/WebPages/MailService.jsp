@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1 style="color:green; font-family:impact"><center>Bangladesh House Building Finance Corporation</center></h1></td>
+
 <f:view>
-		<h1>Log in Completed</h1>
-		
+		<h1>Mail Service </h1>
 </f:view>
 </body>
 </html>

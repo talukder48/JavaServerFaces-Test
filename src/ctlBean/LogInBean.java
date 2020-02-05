@@ -16,9 +16,10 @@ public class LogInBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	Map ReturnObj = new HashMap<String, String>();
 	Map ValidatorObj = new HashMap<String, String>();
-	LoginValidation lv=null;
+	LoginValidation lv = null;
+
 	public LogInBean() {
-		lv =new LoginValidation();		
+		lv = new LoginValidation();
 	}
 
 	private String usrname = null;
@@ -29,18 +30,18 @@ public class LogInBean implements Serializable {
 	}
 
 	public void setUsrname(String usrname) {
-		
+
 		Map<String, String> datamap = new HashMap<String, String>();
 		datamap.put("USER_NAME", usrname);
 		try {
-			ValidatorObj=lv.UserIdValidation(datamap);
+			ValidatorObj = lv.UserIdValidation(datamap);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		if (ReturnObj.get("ERROR").toString() == null || ReturnObj.get("ERROR").toString() == "") {
+
+		if (ValidatorObj.get("ERROR").toString() == null || ValidatorObj.get("ERROR").toString() == "") {
 			this.usrname = usrname;
-		}		
+		}
 	}
 
 	public String getPassword() {
@@ -56,7 +57,7 @@ public class LogInBean implements Serializable {
 		Map DataObj = new HashMap<String, String>();
 		DataObj.put("UserName", usrname);
 		DataObj.put("Password", password);
-		DataObj.put("JavaClass", "LoginValidator");
+		DataObj.put("JavaClass", "Login");
 		DataObj.put("Method", "Save");
 
 		CDelegator cd = new CDelegator();

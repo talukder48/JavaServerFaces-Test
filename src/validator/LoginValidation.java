@@ -19,7 +19,7 @@ public class LoginValidation {
 		ResultMap.clear();
 	}
 	public Map<String, String> UserIdValidation(Map DataMap) throws Exception {
-		ResultMap.put("ERROR_MSG", "");
+		ResultMap.put("ERROR", "");
 		DBConnector ob = new DBConnector();
 		String sql = "select * from PRMS_USER t where t.user_id=?";
 		Connection con = ob.GetConnection();
@@ -30,7 +30,7 @@ public class LoginValidation {
 			stmt.setString(1, DataMap.get("USER_NAME").toString());
 			 rs = stmt.executeQuery();
 			if (!rs.next()) {
-				ResultMap.put("ERROR_MSG", "User not Found!");
+				ResultMap.put("ERROR", "User not Found!");
 			} else {
 				ResultMap.put("USER_ROLE", rs.getString("USER_ROLE"));
 				ResultMap.put("USER_NAME", rs.getString("USER_NAME"));
@@ -49,7 +49,6 @@ public class LoginValidation {
 		}
 		return ResultMap;
 	}
-
 
 	public Map<String, String> LogOut(Map DataMap) {
 		return ResultMap;

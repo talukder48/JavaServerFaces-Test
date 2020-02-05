@@ -49,6 +49,8 @@
 <meta http-equiv="expires" content="0">
 </head>
 <body onload="init()">
+<h1 style="color:green; font-family:impact"><center>Bangladesh House Building Finance Corporation</center></h1></td>
+
 	<f:view>
 		<h:form id="MF" onkeypress="return event.keyCode != 13;" style="top:200px">		
 		<center>

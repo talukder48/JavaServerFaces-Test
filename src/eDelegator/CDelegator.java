@@ -22,7 +22,7 @@ public class CDelegator {
 			e.printStackTrace();
 		}*/catch (Exception e) {
 			//e.printStackTrace();
-			MapObj.put("ERROR", "Error in Facade Method");
+			MapObj.put("ERROR", "Error in CommonDelegator Method");
 		}
 		
 		return MapObj;
